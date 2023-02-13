@@ -9,16 +9,16 @@ export default defineComponent({
   props: {
     tag: {
       type: String,
-      default: 'div'
+      default: 'div',
     },
     strategyName: {
       type: String,
-      required: true
+      required: true,
     },
     renderContent: {
       type: Function,
-      required: true
-    }
+      required: true,
+    },
   },
   setup(props, { slots, attrs }) {
     if (process.server) {
@@ -33,14 +33,15 @@ export default defineComponent({
                   el.removeAttribute('data-pre-hydratable');
                   el.innerHTML = runner(el.dataset);
                 })
-              }`.replace(/\s+/g, ' ')
+              }`.replace(/\s+/g, ' '),
           },
           {
             key: 'strategy',
-            innerHTML:
-              `window.__PREHYDRATE['${props.strategyName}'] = ${props.renderContent.toString()};`
-          }
-        ]
+            innerHTML: `window.__PREHYDRATE['${
+              props.strategyName
+            }'] = ${props.renderContent.toString()};`,
+          },
+        ],
       })
     }
 
@@ -50,17 +51,14 @@ export default defineComponent({
       if (process.client || !vnodes || !vnodes.length) return h(props.tag, vnodes)
 
       const renderedAttrs: Record<string, any> = {
-        'data-pre-hydratable': props.strategyName
+        'data-pre-hydratable': props.strategyName,
       }
 
       for (const prop in renderedAttrs) {
         renderedAttrs[`data-${prop}`] = attrs[prop]
       }
 
-      return h(props.tag, renderedAttrs, [
-        vnodes,
-        SERVER_HELPER
-      ])
+      return h(props.tag, renderedAttrs, [vnodes, SERVER_HELPER])
     }
-  }
+  },
 })

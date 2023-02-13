@@ -15,12 +15,8 @@ describe('nuxt-pre-hydrate', async () => {
     expect(html).toContain(
       '<div data-pre-hydratable="test"><!--[-->server rendered<!--]--><script>__PREHYDRATE()</script></div>'
     )
-    expect(html).toContain(
-      'window.__PREHYDRATE ='
-    )
-    expect(html).toContain(
-      `<script>window.__PREHYDRATE['test'] =`
-    )
+    expect(html).toContain('window.__PREHYDRATE =')
+    expect(html).toContain(`<script>window.__PREHYDRATE['test'] =`)
   })
 
   it('has no hydration errors on the client', async () => {
