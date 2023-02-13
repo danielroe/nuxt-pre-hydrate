@@ -1,6 +1,6 @@
 {
   "name": "nuxt-pre-hydrate",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "license": "MIT",
   "description": "Safely run pre-hydration steps on the client with Nuxt 3",
   "repository": "danielroe/nuxt-pre-hydrate",
