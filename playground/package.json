@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "nuxt-pre-hydrate-playground",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate"
+  },
+  "devDependencies": {
+    "nuxt": "3.2.0",
+    "nuxt-pre-hydrate": "latest"
+  }
+}
