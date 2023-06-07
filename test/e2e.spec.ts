@@ -1,7 +1,6 @@
 import { fileURLToPath } from 'node:url'
 import { describe, it, expect } from 'vitest'
 import { setup, $fetch, createPage, url } from '@nuxt/test-utils'
-import { createRegExp } from 'magic-regexp'
 
 await setup({
   server: true,
@@ -16,7 +15,7 @@ describe('nuxt-pre-hydrate', async () => {
       '<div data-pre-hydratable="test"><!--[-->server rendered<!--]--><script>__PREHYDRATE()</script></div>'
     )
     expect(html).toContain('window.__PREHYDRATE =')
-    expect(html).toContain(`<script>window.__PREHYDRATE['test'] =`)
+    expect(html.replace(/ data-h-[^=]+=""/g, '')).toContain(`<script>window.__PREHYDRATE['test'] =`)
   })
 
   it('has no hydration errors on the client', async () => {
