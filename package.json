@@ -79,7 +79,7 @@
   "resolutions": {
     "nuxt-pre-hydrate": "link:."
   },
-  "packageManager": "pnpm@7.33.0",
+  "packageManager": "pnpm@7.33.1",
   "volta": {
     "node": "18.16.0"
   }
