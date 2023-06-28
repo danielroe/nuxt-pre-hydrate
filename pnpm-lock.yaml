@@ -21,7 +21,7 @@ importers:
       expect-type: 0.16.0
       get-port-please: 3.0.1
       husky: 8.0.3
-      lint-staged: 13.2.2
+      lint-staged: 13.2.3
       magic-regexp: 0.7.0
       nuxt: 3.5.3
       nuxt-vitest: 0.8.5
@@ -48,7 +48,7 @@ importers:
       expect-type: 0.16.0
       get-port-please: 3.0.1
       husky: 8.0.3
-      lint-staged: 13.2.2
+      lint-staged: 13.2.3
       magic-regexp: 0.7.0
       nuxt: 3.5.3_bjjpyxord5aaebxdnbpohmj3gq
       nuxt-vitest: 0.8.5_dv2unjhdcmnpg4bzvpvdcvdw4y
@@ -4371,8 +4371,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/13.2.2:
-    resolution: {integrity: sha512-71gSwXKy649VrSU09s10uAT0rWCcY3aewhMaHyl2N84oBk4Xs9HgxvUp3AYu+bNsK4NrOYYxvSgg7FyGJ+jGcA==}
+  /lint-staged/13.2.3:
+    resolution: {integrity: sha512-zVVEXLuQIhr1Y7R7YAWx4TZLdvuzk7DnmrsTNL0fax6Z3jrpFcas+vKbzxhhvp6TA55m1SQuWkpzI1qbfDZbAg==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
