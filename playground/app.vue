@@ -3,7 +3,11 @@ const contentRenderer = () => typeof globalThis.document !== 'undefined' ? 'repl
 </script>
 
 <template>
-  <PreHydrate tag="div" :renderContent="contentRenderer" strategy-name="test">
+  <PreHydrate
+    tag="div"
+    :render-content="contentRenderer"
+    strategy-name="test"
+  >
     {{ contentRenderer() }}
   </PreHydrate>
 </template>

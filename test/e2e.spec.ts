@@ -12,7 +12,7 @@ describe('nuxt-pre-hydrate', async () => {
   it('ssr', async () => {
     const html = await $fetch('/')
     expect(html).toContain(
-      '<div data-pre-hydratable="test"><!--[-->server rendered<!--]--><script>__PREHYDRATE()</script></div>'
+      '<div data-pre-hydratable="test"><!--[-->server rendered<!--]--><script>__PREHYDRATE()</script></div>',
     )
     expect(html).toContain('window.__PREHYDRATE =')
     expect(html.replace(/ data-h-[^=]+=""/g, '')).toContain(`<script>window.__PREHYDRATE['test'] =`)
@@ -22,7 +22,7 @@ describe('nuxt-pre-hydrate', async () => {
     const page = await createPage(undefined, { locale: 'en-GB' })
     const logs: string[] = []
 
-    page.on('console', event => {
+    page.on('console', (event) => {
       if (!event.text().includes('<Suspense>')) {
         logs.push(event.text())
       }

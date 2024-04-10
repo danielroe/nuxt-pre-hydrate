@@ -21,7 +21,7 @@ export default defineComponent({
     },
   },
   setup(props, { slots, attrs }) {
-    if (process.server) {
+    if (import.meta.server) {
       useHead({
         script: [
           {
@@ -48,7 +48,7 @@ export default defineComponent({
     return () => {
       const vnodes = slots.default?.()
 
-      if (process.client || !vnodes || !vnodes.length) return h(props.tag, vnodes)
+      if (import.meta.client || !vnodes || !vnodes.length) return h(props.tag, vnodes)
 
       const renderedAttrs: Record<string, any> = {
         'data-pre-hydratable': props.strategyName,
