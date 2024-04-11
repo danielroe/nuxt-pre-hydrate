@@ -1,6 +1,5 @@
 import { defineNuxtModule, createResolver, addComponentsDir } from '@nuxt/kit'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
