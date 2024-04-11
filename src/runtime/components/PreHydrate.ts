@@ -50,7 +50,7 @@ export default defineComponent({
 
       if (import.meta.client || !vnodes || !vnodes.length) return h(props.tag, vnodes)
 
-      const renderedAttrs: Record<string, any> = {
+      const renderedAttrs: Record<string, unknown> = {
         'data-pre-hydratable': props.strategyName,
       }
 
