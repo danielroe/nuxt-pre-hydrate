@@ -59,7 +59,7 @@
     "@types/node": "20.12.7",
     "@vitest/coverage-v8": "1.5.2",
     "bumpp": "9.4.1",
-    "eslint": "9.4.0",
+    "eslint": "9.6.0",
     "expect-type": "0.19.0",
     "get-port-please": "3.1.2",
     "husky": "9.0.11",
