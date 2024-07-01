@@ -52,8 +52,8 @@ importers:
         specifier: 15.2.7
         version: 15.2.7
       magic-regexp:
-        specifier: 0.7.0
-        version: 0.7.0
+        specifier: 0.8.0
+        version: 0.8.0
       nuxt:
         specifier: 3.11.2
         version: 3.11.2(@types/node@20.12.7)(@unocss/reset@0.59.0)(eslint@9.4.0)(floating-vue@5.2.2)(rollup@3.29.4)(typescript@5.3.3)(unocss@0.59.0)(vite@5.2.11)
@@ -5828,12 +5828,13 @@ packages:
     dependencies:
       yallist: 4.0.0
 
-  /magic-regexp@0.7.0:
-    resolution: {integrity: sha512-C9m5/JqFV1/CMrMFDf1PqmvMc8ohrssmlF5bdgea7nUqqn6D9xzKVTa6DIm0LReCqvEPS35o1UElmb7PmoSfHQ==}
+  /magic-regexp@0.8.0:
+    resolution: {integrity: sha512-lOSLWdE156csDYwCTIGiAymOLN7Epu/TU5e/oAnISZfU6qP+pgjkE+xbVjVn3yLPKN8n1G2yIAYTAM5KRk6/ow==}
     dependencies:
       estree-walker: 3.0.3
       magic-string: 0.30.9
       mlly: 1.6.1
+      regexp-tree: 0.1.27
       type-level-regexp: 0.1.17
       ufo: 1.5.3
       unplugin: 1.10.1
