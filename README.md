@@ -69,7 +69,7 @@ Published under the [MIT License](./LICENCE).
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-pre-hydrate?style=flat-square
 [npm-version-href]: https://npmjs.com/package/nuxt-pre-hydrate
 [npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-pre-hydrate?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/nuxt-pre-hydrate
+[npm-downloads-href]: https://npm.chart.dev/nuxt-pre-hydrate
 [github-actions-src]: https://img.shields.io/github/actions/workflow/status/danielroe/nuxt-pre-hydrate/ci.yml?branch=main
 [github-actions-href]: https://github.com/danielroe/nuxt-pre-hydrate/actions?query=workflow%3Aci
 [codecov-src]: https://img.shields.io/codecov/c/gh/danielroe/nuxt-pre-hydrate/main?style=flat-square
