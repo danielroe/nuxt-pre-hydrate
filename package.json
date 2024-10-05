@@ -52,23 +52,23 @@
     "@nuxt/kit": "^3.11.2"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "0.3.13",
+    "@nuxt/eslint-config": "0.5.7",
     "@nuxt/module-builder": "0.8.3",
     "@nuxt/schema": "3.13.0",
     "@nuxt/test-utils": "3.14.1",
-    "@types/node": "20.12.7",
+    "@types/node": "20.16.10",
     "@vitest/coverage-v8": "2.0.5",
-    "bumpp": "9.5.2",
+    "bumpp": "9.6.1",
     "eslint": "9.11.1",
     "expect-type": "1.0.0",
     "get-port-please": "3.1.2",
-    "husky": "9.0.11",
-    "lint-staged": "15.2.9",
+    "husky": "9.1.6",
+    "lint-staged": "15.2.10",
     "magic-regexp": "0.8.0",
     "nuxt": "3.13.0",
     "pinst": "3.0.0",
-    "playwright": "1.45.3",
-    "typescript": "5.3.3",
+    "playwright": "1.47.2",
+    "typescript": "5.6.2",
     "vite": "5.4.8",
     "vitest": "2.0.5",
     "vue": "3.4.38"
@@ -76,8 +76,8 @@
   "resolutions": {
     "nuxt-pre-hydrate": "link:."
   },
-  "packageManager": "pnpm@9.8.0",
+  "packageManager": "pnpm@9.12.0",
   "volta": {
-    "node": "20.12.2"
+    "node": "20.18.0"
   }
 }
