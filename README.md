@@ -1,3 +1,8 @@
+> [!IMPORTANT]  
+> A new `onPrehydrate` hook was added to Nuxt core in v3.12.0 which replaces this module - see https://github.com/nuxt/nuxt/pull/27037.
+
+---
+
 # Nuxt Pre-Hydrate
 
 [![npm version][npm-version-src]][npm-version-href]
